@@ -8,13 +8,15 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start; /* Align items from the top */
             align-items: center;
             height: 100vh;
             font-family: Arial, sans-serif;
             background: url('https://raw.githubusercontent.com/KaiKai7/PuraView-Overview/main/pipe_on_reef.jpg') no-repeat center center fixed;
             background-size: cover;
             color: #fff; /* Ensure text is readable on the background */
+            padding-top: 20px; /* Add padding to the top */
+            box-sizing: border-box;
         }
         .title, .timer-container {
             text-align: center;
@@ -26,6 +28,7 @@
         }
         .title {
             margin-bottom: 20px;
+            margin-top: 20px; /* Add margin to the top */
             font-size: 2em; /* Larger font size for the main title */
         }
         .timer-container h1 {
